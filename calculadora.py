@@ -2,28 +2,27 @@
 porcentaje)'''
 
 def main():
-    calculadora = str(input("Qué Desea Escoger: Sumar -  Restar - Multiplicar - Dividir - Porcentaje - Potencia: "))
+    calcu = str(input("Qué Desea Escoger: Sumar -  Restar - Multiplicar - Dividir - Porcentaje - Potencia: "))
     a = int(input("Escriba el valor de a: "))
     b = int(input("Escriba el valor de b: "))
-    resultado = calculadora
-    print(f"Hemos calculado el/la {resultado}")
+    resultado = calcu
+    print(f"El resultado de la {resultado} es: ")
 
 #Al usar una de las palabras clave el código ejecuta su respectiva operación matemática
 
-
-    if calculadora == "Sumar":
+    if calcu == "Sumar":
         print(a + b)   
-    elif calculadora == "Restar":
+    elif calcu == "Restar":
         print(a - b)
-    elif calculadora == "Multiplicar":
+    elif calcu == "Multiplicar":
         print(a * b)
-    elif calculadora == "Dividir":
+    elif calcu == "Dividir":
         print(a / b)
-    elif calculadora == "Potencia":
+    elif calcu == "Potencia":
         print(a ** b)
-    elif calculadora == "Porcentaje":
+    elif calcu == "Porcentaje":
         print(b / a * 100, str("%"))
-    if calculadora == "Comprobación":   
+    if calcu == "Comprobación":   
         a / b  % 2 == 0
         print("Es un número par")
            
